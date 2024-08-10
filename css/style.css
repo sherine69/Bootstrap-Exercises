@@ -1,0 +1,29 @@
+.navbar-brand img{
+    width: 50px;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7) 0 100%), url(../images/plant-bg.jpg);
+    height: 100vh;
+    background-size: contain;
+}
+.navbar-nav a{
+    position: relative;
+    margin-left: 20px;
+    padding-inline: 0 !important;  
+
+   
+   
+}
+.navbar-nav a::after{
+content:"";
+position: absolute;
+width: 0%;
+height: 1px;
+background-color: white;
+left: 0;
+bottom: 0;
+transition: width 0.5s;
+}
+.navbar-nav a:hover::after{
+    width: 100%;
+}
